@@ -181,7 +181,7 @@ sudo chown -R codespace:codespace myroot
 ```
 *** __Fill answer here__.***
 
-## You are own your own, create your own static webpage
+## You are on your own, create your own static webpage
 
 1. Create a directory called webpage in your host machine
 2. Inside the directory, create a page index.html, with any content you would like
