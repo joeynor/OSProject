@@ -33,7 +33,9 @@ Team Mates:
 1. The next thing that we will be doing is exploring codespaces. First of all, read about codespaces https://docs.github.com/en/codespaces/overview#what-is-a-codespace
 2. The go to the link https://github.com/codespaces and we shall start a new codespace.  
 3. Click on ***New codespace***.
-4. Choose your own OSProject repository to start your codespace. <img src="https://" width="150" height="280">
+4. Choose your own OSProject repository to start your codespace.
+
+<img src="./images/newcodespace.png" width="50%">
 
 
 ***Questions: ***
