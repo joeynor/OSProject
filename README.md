@@ -15,7 +15,7 @@ Team Mates:
 3. Answer all questions in the **README.md**, in your own repository. Either use the online VSCode, terminal or github to edit. Answers are expected where you see __Fill answer here__.
 4. Learn how to use markdown. https://www.w3schools.io/file/markdown-introduction/
 
-## Cloning this OS project repository
+## Forking this OS project repository
 1. First thing you need in doing this project is to have a github account. Make sure to sign up at https://www.github.com
 2. The second thing you need is to clone the OS project repository in your own github account. 
 
