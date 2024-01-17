@@ -185,7 +185,7 @@ sudo chown -R codespace:codespace myroot
 
 1. Create a directory called webpage in your host machine
 2. Inside the directory, create a page index.html, with any content you would like
-3. Then, run the apache webserver and mounst the webpage directory to it. Hint:
+3. Then, run the apache webserver and mount the webpage directory to it. Hint:
 ```bash
 ## the -p 8080:80 flag points the host port 8080 to the container port 80
 
