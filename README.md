@@ -43,7 +43,7 @@ Team Mates:
 
 6. You will see the [README file](./README.md) file. One is a preview of how it looks like on the web, and the other is the editing view in markdown language. 
 7. Edit the [README file](./README.md). Make sure you have your group details correct, ie, group name, section and team members along with their matric IDs. 
-8. Once you have finish editing, click File->Save or <ctrl-s> to save it. 
+8. Once you have finish editing, click File->Save or ***ctrl-s*** to save it. 
 9. After saving, you will notice an M or U next to your file. You will need to commit any changes, whenever you make changes so that it is uploaded to the github repository. 
 
  <img src="./images/SourceControlUI.png" width="70%">
