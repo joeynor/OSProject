@@ -19,8 +19,8 @@ Team Mates:
 1. First thing you need in doing this project is to have a github account. Make sure to sign up at https://www.github.com
 2. The second thing you need is to clone the OS project repository in your own github account. 
 
-    a. Go to https://github.com/joeynor/OSProject and click fork to copy the project into your own repository
-    b. Make sure that the new fork is now in your own repository
+    1. Go to https://github.com/joeynor/OSProject and click fork to copy the project into your own repository
+    2. Make sure that the new fork is now in your own repository
 
 ***Questions:***
 
@@ -37,6 +37,18 @@ Team Mates:
 
  <img src="./images/newcodespace.png" width="50%">
 
+5. Once you have created you codespace, you will see the following. You might already be familiar with this, since it will look similar to VSCode. 
+
+ <img src="./images/UIwebvscode.png" width="70%">
+
+6. You will see the [README file](./README.md) file. One is a preview of how it looks like on the web, and the other is the editing view in markdown language. 
+7. Edit the [README file](./README.md). Make sure you have your group details correct, ie, group name, section and team members along with their matric IDs. 
+8. Once you have finish editing, click File->Save or <ctrl-s> to save it. 
+9. After saving, you will notice an M or U next to your file. You will need to commit any changes, whenever you make changes so that it is uploaded to the github repository. 
+
+ <img src="./images/SourceControlUI.png" width="70%">
+
+10. Click on the source control, hint: its on the left side panel, and it will list down the files that have been modified or updaed. 
 
 ***Questions:***
 
