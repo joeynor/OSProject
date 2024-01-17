@@ -48,7 +48,12 @@ Team Mates:
 
  <img src="./images/SourceControlUI.png" width="70%">
 
-10. Click on the source control, hint: its on the left side panel, and it will list down the files that have been modified or updaed.
+10. Click on the source control, hint: its on the left side panel, and it will list down the files that have been modified or updated. Click on commit. It will then ask you "Would you like to stage all your changes and commit them directly?" Just say yes, and a new tab will appear. Type a message to log what you have done, and click on the check mark. 
+
+
+11. After that, sync the changes to the main repository. 
+
+12. Make sure to commit and sync your files to the main repository, or else, your work will be lost since it is not saved into the main repository when you submit your project.
 
 ***Questions:***
 
