@@ -25,7 +25,7 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __Fill answer here__.
-2. Questions: How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
 
 
 ## Exploring github codespaces
@@ -36,7 +36,7 @@ Team Mates:
 4. Choose your own OSProject repository to start your codespace. <img src="https://" width="150" height="280">
 
 
-***Questions: ***
+***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***__Fill answer here__.
