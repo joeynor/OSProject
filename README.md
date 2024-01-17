@@ -163,5 +163,4 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 @joeynor ➜ /workspaces/OSProject (main) $ pwd myroot
 /workspaces/OSProject
 
-
 ```
