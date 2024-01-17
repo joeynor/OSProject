@@ -17,7 +17,7 @@ Team Mates:
 
 ## Forking this OS project repository
 1. First thing you need in doing this project is to have a github account. Make sure to sign up at https://www.github.com
-2. The second thing you need is to clone the OS project repository in your own github account. 
+2. The second thing you need is to fork the OS project repository in your own github account. 
 
     1. Go to https://github.com/joeynor/OSProject and click fork to copy the project into your own repository
     2. Make sure that the new fork is now in your own repository
