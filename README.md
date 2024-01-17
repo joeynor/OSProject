@@ -50,12 +50,118 @@ Team Mates:
 
 10. Click on the source control, hint: its on the left side panel, and it will list down the files that have been modified or updated. Click on commit. It will then ask you "Would you like to stage all your changes and commit them directly?" Just say yes, and a new tab will appear. Type a message to log what you have done, and click on the check mark. 
 
+ <img src="./images/CommittingUI.png" width="70%">
 
 11. After that, sync the changes to the main repository. 
-
 12. Make sure to commit and sync your files to the main repository, or else, your work will be lost since it is not saved into the main repository when you submit your project.
 
 ***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+
+## Exploring the Terminal
+
+1. Look at the TERMINAL tab. Explore and run commands according to the questions below. 
+2. You can include your answers as images, or cut and paste the output here. If you are cutting and pasting your answers, wrap your answers in the codeblock clause in markdown. For example, if i run the command **whoami** the the output would look like the one below.
+```bash
+@joeynor ➜ /workspaces/OSProject (main) $ whoami 
+codespace
+```
+
+
+
+***Questions:***
+
+Look at the TERMINAL tab. Run the following commands and provide the output here. 
+
+1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
+2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
+3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
+4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
+5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
+6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
+7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
+9. Run the command **top** a type **q** to quit. ***(1 mark)*** __Fill answer here__.
+10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
+11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+
+## Running your own container instance.
+
+1. At the terminal, run a linux instance. By typing the following command. 
+```
+docker pull debian
+docker run --detach -it debian
+```
+2. This will run the debian container. To check if the debian container is running, type
+```bash
+@joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
+f65be1987f84   debian    "bash"    4 minutes ago   Up 4 minutes             romantic_jackson
+```
+
+3. Keep note of the name used by your container, this is usually given random names unless you specify your own name. Now run a bash command on the container. Make sure you use the name of your container instead of the one shown here. 
+```bash
+docker exec -i -t romantic_jackson /bin/bash
+```
+
+4. Create a file on the container. First you must make sure you are in the bash command prompt of the container. The container is new, and does not have any software other than the debian OS. To create a new file, you will need an editor installed. In the bash shell of the container, run the package manager apt-get to install nano text editor. 
+
+```bash
+root@f65be1987f84:~# apt-get update      
+
+root@f65be1987f84:~# apt-get install nano
+
+root@f65be1987f84:~# cd /root
+
+root@f65be1987f84:~# nano helloworld.txt
+```
+
+5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
+
+6. Stop the container and run **docker ps -a**, and restart the container again. Is your file in the container still available?
+```bash 
+@joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
+
+@joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                        PORTS     NAMES
+f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago             romantic_jackson
+
+@joeynor ➜ /workspaces/OSProject (main) $ docker restart romantic_jackson
+```
+
+7. Stop the container and delete the container. What happened to your helloworld.txt?
+
+```bash 
+@joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
+
+@joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                        PORTS     NAMES
+f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago             romantic_jackson
+
+@joeynor ➜ /workspaces/OSProject (main) $ docker rm romantic_jackson
+```
+
+***Questions:***
+
+1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+
+## Running your own container with persistent storage
+
+1. At the terminal, create a new directory called myroot, and run a instance of debian linux and mount myroot
+```bash 
+@joeynor ➜ /workspaces/OSProject (main) $ mkdir myroot
+@joeynor ➜ /workspaces/OSProject (main) $ pwd myroot
+/workspaces/OSProject
+
+
+```
