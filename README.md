@@ -25,6 +25,8 @@ Team Mates:
 1. What is the link of the fork OSProject in your repository. 
 https://github.com/kamilaiman891/OSProject/edit/main/README.md
 2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+7 files and 1 folder
+
 
 
 ## Exploring github codespaces
