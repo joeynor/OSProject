@@ -274,13 +274,13 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5972.5 avail
 Linux codespaces-7a49ea 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***
 ls :List only the visible files
-ls -asl : List all of the files including the hidden ones . - a (all) , -s (size) and -l (long format) files . 
+and ls -asl : List all of the files including the hidden ones . - a (all) , -s (size) and -l (long format) files . 
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
 Processor 0 :2560 4K pages
-Processor 1 : 2560 4K pages
+ and Processor 1 : 2560 4K pages
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
 Processor 0 :2932.057 MHz
-Processor 1 :3150.092 MHz
+and Processor 1 :3150.092 MHz
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
 PID 2735 USER codespa+
 
