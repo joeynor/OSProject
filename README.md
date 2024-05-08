@@ -209,6 +209,38 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 2. What port is the apache web server running. ***(1 mark)***
 3. What port is open for http protocol on the host machine? ***(1 mark)***
 
+## Create SUB Networks
+
+1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
+2. Run the docker create network to create you networks like the ones below
+```bash
+## STEP 1:
+## Create Networks ##
+docker network create bluenet
+docker network create rednet`
+
+## STEP 2: (automatically running)
+## Create (1) Container in background called "c1" running busybox image ##
+docker run -itd --net bluenet --name c1 busybox sh
+docker run -itd --net rednet --name c2 busybox sh
+```
+***Questions:***
+
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+4. What is the network address for the running container c1 and c2.
+5. Using the command ```docker exec c1 ping c2```, which basically issue a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+
+## Bridging two SUB Networks
+1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
+```
+docker network create bridgenet
+docker network connect bridgenet c1
+docker network connect bridgenet c2
+docker exec c1 ping c2
+```
+
 ## What to submit
 
 1. Make sure to commit all changes on your source control, and make sure your source control is sync to the repository. 
