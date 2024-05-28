@@ -206,8 +206,8 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 ***Questions:***
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)***
-3. What port is open for http protocol on the host machine? ***(1 mark)***
+2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
+3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
 
 ## Create SUB Networks
 
@@ -227,10 +227,10 @@ docker run -itd --net rednet --name c2 busybox sh
 ***Questions:***
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
-4. What is the network address for the running container c1 and c2? ***(1 mark)***
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
+4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -242,8 +242,8 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)***
-2. What is different from the previous ping in the section above? ***(1 mark)***
+1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
 
 ## Intermediate Level (10 marks bonus)
 
@@ -386,8 +386,8 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)***
-2. Show the instruction needed to make this work. ***(1 mark)***
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
+2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
 
 
