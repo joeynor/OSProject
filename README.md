@@ -229,8 +229,8 @@ docker run -itd --net rednet --name c2 busybox sh
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
-4. What is the network address for the running container c1 and c2.
-5. Using the command ```docker exec c1 ping c2```, which basically issue a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+4. What is the network address for the running container c1 and c2? ***(1 mark)***
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -240,10 +240,160 @@ docker network connect bridgenet c1
 docker network connect bridgenet c2
 docker exec c1 ping c2
 ```
+***Questions:***
+
+1. Are you able to ping? Show your output . ***(1 mark)***
+2. What is different from the previous ping in the section above? ***(1 mark)***
+
+## Intermediate Level (10 marks bonus)
+
+### Node.js and MySQL in Docker Containers
+
+This guide will help you set up a simple Node.js website that retrieves a random row from a MySQL database. Both the MySQL server and the Node.js server will run in separate Docker containers on two separate networks. Your job is to make it work by making the two containers in two separate network bridged together.
+
+#### Step 1: Set Up the Docker Network
+
+Create a Docker network to for the two containers.
+For mysql, call it **mysqlnet** for nodejs call it **nodejsnet** .
+
+#### Step 2: Set Up the MySQL Container
+
+Run a MySQL container on the created network.
+
+```sh
+docker run --name mysql-container --network mysqlnet -e MYSQL_ROOT_PASSWORD=rootpassword -e MYSQL_DATABASE=mydatabase -e MYSQL_USER=myuser -e MYSQL_PASSWORD=mypassword -d mysql:latest
+```
+
+#### Step 3: Set Up the Node.js Container
+
+1. **Create a directory for your Node.js application and initialize it.**
+
+    ```sh
+    mkdir nodejs-app
+    cd nodejs-app
+    npm init -y
+    npm install express mysql
+    ```
+
+2. **Create a file named `index.js` with the following content:**
+
+    ```js
+    const express = require('express');
+    const mysql = require('mysql');
+
+    const app = express();
+    const port = 3000;
+
+    // Create a MySQL connection
+    const connection = mysql.createConnection({
+      host: 'mysql-container',
+      user: 'myuser',
+      password: 'mypassword',
+      database: 'mydatabase'
+    });
+
+    // Connect to MySQL
+    connection.connect((err) => {
+      if (err) {
+        console.error('Error connecting to MySQL:', err);
+        return;
+      }
+      console.log('Connected to MySQL');
+    });
+
+    // Define a route to get a random row
+    app.get('/random', (req, res) => {
+      const query = 'SELECT * FROM mytable ORDER BY RAND() LIMIT 1';
+      connection.query(query, (err, results) => {
+        if (err) {
+          console.error('Error executing query:', err);
+          res.status(500).send('Server Error');
+          return;
+        }
+        res.json(results[0]);
+      });
+    });
+
+    // Start the server
+    app.listen(port, () => {
+      console.log(`Server running at http://localhost:${port}`);
+    });
+    ```
+
+3. **Create a Dockerfile for the Node.js application:**
+
+    ```Dockerfile
+    # Use the official Node.js image
+    FROM node:14
+
+    # Create and change to the app directory
+    WORKDIR /usr/src/app
+
+    # Copy application dependency manifests to the container image
+    COPY package*.json ./
+
+    # Install production dependencies
+    RUN npm install
+
+    # Copy local code to the container image
+    COPY . .
+
+    # Run the web service on container startup
+    CMD [ "node", "index.js" ]
+    ```
+
+#### Step 4: Build and Run the Node.js Container
+
+1. **Build the Docker image for the Node.js application.**
+
+    ```sh
+    docker build -t nodejs-app .
+    ```
+
+2. **Run the Node.js container on the same network as the MySQL container.**
+
+    ```sh
+    docker run --name nodejs-container --network nodejsnet -p 3000:3000 -d nodejs-app
+    ```
+
+#### Step 5: Test the Setup
+
+You can now test the setup by accessing the Node.js application in your browser or using a tool like `curl`:
+
+```sh
+curl http://localhost:3000/random
+```
+
+#### Step 6: Ensure `mytable` is Populated
+
+Make sure you have created the `mytable` table and populated it with some data in your MySQL database for the above steps to work correctly.
+
+You can use the following SQL commands to create and populate the table (run these commands in the MySQL container):
+
+```sql
+CREATE TABLE mytable (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  value VARCHAR(255) NOT NULL
+);
+
+INSERT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'value2'), ('example3', 'value3');
+```
+
+### Summary
+
+You have now set up a Node.js application in a Docker container on nodejsnet netowrk and a MySQL database in another Docker container on mysqlnet network. Now bridge the two network together.
+
+***Questions:***
+
+1. What is the output of step 5 above, explain the error? ***(1 mark)***
+2. Show the instruction needed to make this work. ***(1 mark)***
+
+
 
 ## What to submit
 
 1. Make sure to commit all changes on your source control, and make sure your source control is sync to the repository. 
 2. Check your repository link, to see if all the files and answers are included in the repository. 
 3. Submit through italeem, by providing the link to your repository.
-4. Due by ***31 January, 2024***
+4. Due by ***AS STATED IN ITALEEM SYSTEM***
