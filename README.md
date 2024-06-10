@@ -535,7 +535,7 @@ Linux codespaces-771f99 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08
 ```
 11. What is the available free memory in the system. ***(1 mark)*** 
 ```
-
+ 2.5Gi  
 ```
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
 ```
