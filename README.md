@@ -68,7 +68,7 @@ Ubuntu Linux
 ```
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 ```
-Answer
+You can choose from a selection of virtual machine types, from 2 cores, 8 GB RAM, and 32 GB storage, up to 32 cores, 64 GB RAM, and 128 GB storage
 ```
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ```
