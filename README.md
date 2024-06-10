@@ -539,11 +539,13 @@ Linux codespaces-771f99 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08
 ```
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
 ```
+20741920 KB or about 21 GB
 
 ```
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
 ```
-
+version - 6.5.0-1021-azure 
+hardware architecture - x86_64
 ```
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
 ```
@@ -551,15 +553,15 @@ The ls command lists directory contents, while ls -asl provides a more detailed 
 ```
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
 ```
-
+ 2560 4K pages 
 ```
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)***
 ```
-
+3243.044
 ```
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
 ```
-
+  3.8 
 ```
 
 ## Running your own container instance.
@@ -622,11 +624,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 1. Are files in the container persistent. Why not?. ***(1 mark)*** 
 ```bash
-__Answer__:
+Answer
 ```
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
 ```bash
-__Answer__:
+Answer
 ```
 
 ## Running your own container with persistent storage
