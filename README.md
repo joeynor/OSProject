@@ -2,7 +2,7 @@
 
 Group Name: Sushi
 
-Section: __Fill your class section__. 
+Section: 3 
 
 Team Mates:
 1. __Fill name__ and __matric no__
