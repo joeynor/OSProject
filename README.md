@@ -64,16 +64,15 @@ https://github.com/sayataktahu/OSProject
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***
 ```
-__Answer__: Ubuntu Linux
+Ubuntu Linux
 ```
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 ```
-__Answer__:
 You can choose either 2 cores, 8 GB RAM, and 32 GB storage, or 4 cores, 16 GB RAM, and 32 GB storage
 ```
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ```
-__Answer__:We must do the commit action in order to save our changes to the local repository while sync action is like pulling down any changes from the remote repository that have been made since our last commit. By combines this two actions, it allows us to keep our local repository up to date with the latest changes from other contributors
+We must do the commit action in order to save our changes to the local repository while sync action is like pulling down any changes from the remote repository that have been made since our last commit. By combines this two actions, it allows us to keep our local repository up to date with the latest changes from other contributors
 ```
 
 ## Exploring the Terminal
@@ -379,42 +378,160 @@ cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
 
-processor       : 1
-vendor_id       : AuthenticAMD
-cpu family      : 25
-model           : 1
-model name      : AMD EPYC 7763 64-Core Processor
-stepping        : 1
-microcode       : 0xffffffff
-cpu MHz         : 3243.044
-cache size      : 512 KB
-physical id     : 0
-siblings        : 2
-core id         : 0
-cpu cores       : 1
-apicid          : 1
-initial apicid  : 1
-fpu             : yes
-fpu_exception   : yes
-cpuid level     : 13
-wp              : yes
-flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
-bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
-bogomips        : 4890.85
-TLB size        : 2560 4K pages
-clflush size    : 64
-cache_alignment : 64
-address sizes   : 48 bits physical, 48 bits virtual
-power management:
 
 ```
 9. Run the command **top** and type **q** to quit. ***(1 mark)***
 ```
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  7.1 sy,  0.0 ni, 92.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:23:20 up  1:27,  0 users,  load average: 0.13, 0.33, 0.40
+top - 08:23:23 up  1:28,  0 users,  load average: 0.12, 0.33, 0.40
+top - 08:23:26 up  1:28,  0 users,  load average: 0.12, 0.33, 0.40
+%Cpu(s):  3.9 us,  3.4 sy,  0.0 ni, 92.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:23:29 up  1:28,  0 users,  load average: 0.11, 0.32, 0.39
+MiB Mem :   7929.6 total,   2565.5 free,   1634.5 used,   3729.6 buff/cache
+top - 08:23:32 up  1:28,  0 users,  load average: 0.11, 0.32, 0.39
+MiB Mem :   7929.6 total,   2526.0 free,   1673.9 used,   3729.7 buff/cache
+top - 08:23:35 up  1:28,  0 users,  load average: 0.10, 0.32, 0.39
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+top - 08:23:38 up  1:28,  0 users,  load average: 0.17, 0.33, 0.39
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+top - 08:23:44 up  1:28,  0 users,  load average: 0.16, 0.32, 0.39
+MiB Mem :   7929.6 total,   2526.5 free,   1673.3 used,   3729.8 buff/cache
+top - 08:23:47 up  1:28,  0 users,  load average: 0.16, 0.32, 0.39
+MiB Mem :   7929.6 total,   2537.6 free,   1662.1 used,   3729.9 buff/cache
+top - 08:23:50 up  1:28,  0 users,  load average: 0.14, 0.32, 0.39
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+top - 08:23:53 up  1:28,  0 users,  load average: 0.13, 0.31, 0.39
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+top - 08:23:56 up  1:28,  0 users,  load average: 0.13, 0.31, 0.39
+MiB Mem :   7929.6 total,   2559.1 free,   1640.4 used,   3730.1 buff/cache
+top - 08:23:59 up  1:28,  0 users,  load average: 0.12, 0.31, 0.38
+MiB Mem :   7929.6 total,   2541.4 free,   1658.0 used,   3730.1 buff/cache
+top - 08:24:02 up  1:28,  0 users,  load average: 0.12, 0.31, 0.38
+MiB Mem :   7929.6 total,   2537.2 free,   1662.2 used,   3730.2 buff/cache
+top - 08:24:05 up  1:28,  0 users,  load average: 0.11, 0.30, 0.38
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+top - 08:24:08 up  1:28,  0 users,  load average: 0.10, 0.30, 0.38
+Tasks:  22 total,   2 running,  20 sleeping,   0 stopped,   0 zombie
+top - 08:24:11 up  1:28,  0 users,  load average: 0.10, 0.30, 0.38
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+top - 08:24:14 up  1:28,  0 users,  load average: 0.09, 0.29, 0.38
+MiB Mem :   7929.6 total,   2545.6 free,   1653.6 used,   3730.4 buff/cache
+top - 08:24:17 up  1:28,  0 users,  load average: 0.09, 0.29, 0.38
 
+top - 08:24:20 up  1:28,  0 users,  load average: 0.09, 0.29, 0.37
+Tasks:  27 total,   2 running,  25 sleeping,   0 stopped,   0 zombie
+top - 08:24:23 up  1:29,  0 users,  load average: 0.08, 0.28, 0.37
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+top - 08:24:26 up  1:29,  0 users,  load average: 0.08, 0.28, 0.37
+MiB Mem :   7929.6 total,   2538.2 free,   1660.8 used,   3730.6 buff/cache
+top - 08:24:29 up  1:29,  0 users,  load average: 0.07, 0.28, 0.37
+MiB Mem :   7929.6 total,   2536.2 free,   1662.7 used,   3730.6 buff/cache
+top - 08:24:32 up  1:29,  0 users,  load average: 0.07, 0.28, 0.37
+top - 08:24:35 up  1:29,  0 users,  load average: 0.07, 0.27, 0.37
+top - 08:24:38 up  1:29,  0 users,  load average: 0.06, 0.27, 0.36
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+top - 08:24:41 up  1:29,  0 users,  load average: 0.06, 0.27, 0.36
+MiB Mem :   7929.6 total,   2527.4 free,   1671.3 used,   3730.8 buff/cache
+top - 08:24:44 up  1:29,  0 users,  load average: 0.06, 0.26, 0.36
+top - 08:24:47 up  1:29,  0 users,  load average: 0.06, 0.26, 0.36
+top - 08:24:50 up  1:29,  0 users,  load average: 0.05, 0.26, 0.36
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+top - 08:24:53 up  1:29,  0 users,  load average: 0.05, 0.25, 0.36
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+top - 08:24:56 up  1:29,  0 users,  load average: 0.05, 0.25, 0.36
+MiB Mem :   7929.6 total,   2544.5 free,   1654.0 used,   3731.1 buff/cache
+top - 08:24:59 up  1:29,  0 users,  load average: 0.04, 0.25, 0.36
+MiB Mem :   7929.6 total,   2544.2 free,   1654.2 used,   3731.2 buff/cache
+top - 08:25:02 up  1:29,  0 users,  load average: 0.04, 0.25, 0.36
+MiB Mem :   7929.6 total,   2532.3 free,   1666.0 used,   3731.2 buff/cache
+%Cpu(s):  3.8 us,  4.3 sy,  0.0 ni, 91.5 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7929.6 total,   2521.1 free,   1677.0 used,   3731.4 buff/cache
+top - 08:29:01 up  1:33,  0 users,  load average: 0.36, 0.30, 0.35
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:29:04 up  1:33,  0 users,  load average: 0.73, 0.38, 0.38
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5930.7 avail Mem 
+top - 08:29:07 up  1:33,  0 users,  load average: 0.73, 0.38, 0.38
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+top - 08:29:10 up  1:33,  0 users,  load average: 0.67, 0.37, 0.38
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+top - 08:29:13 up  1:33,  0 users,  load average: 0.62, 0.37, 0.37
+Tasks:  22 total,   2 running,  20 sleeping,   0 stopped,   0 zombie
+top - 08:29:16 up  1:33,  0 users,  load average: 0.62, 0.37, 0.37
+top - 08:29:19 up  1:33,  0 users,  load average: 0.57, 0.36, 0.37
+top - 08:29:22 up  1:33,  0 users,  load average: 0.57, 0.36, 0.37
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+top - 08:29:25 up  1:34,  0 users,  load average: 0.52, 0.35, 0.37
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.8 us,  4.0 sy,  0.0 ni, 90.5 id,  0.5 wa,  0.0 hi,  0.2 si,  0.0 st
+top - 08:29:28 up  1:34,  0 users,  load average: 0.48, 0.35, 0.37
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5929.7 avail Mem 
+%Cpu(s):  4.4 us,  3.9 sy,  0.0 ni, 91.6 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
+top - 08:29:31 up  1:34,  0 users,  load average: 0.48, 0.35, 0.37
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5922.5 avail Mem 
+%Cpu(s):  3.7 us,  4.5 sy,  0.0 ni, 91.5 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:29:34 up  1:34,  0 users,  load average: 0.44, 0.34, 0.36
+top - 08:29:37 up  1:34,  0 users,  load average: 0.44, 0.34, 0.36
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  7.1 us,  5.9 sy,  0.0 ni, 87.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:29:40 up  1:34,  0 users,  load average: 0.40, 0.34, 0.36
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.5 us,  2.5 sy,  0.0 ni, 94.5 id,  0.3 wa,  0.0 hi,  0.2 si,  0.0 st
+top - 08:29:43 up  1:34,  0 users,  load average: 0.37, 0.33, 0.36
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5937.9 avail Mem 
+%Cpu(s):  4.7 us,  3.8 sy,  0.0 ni, 91.3 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
+top - 08:29:46 up  1:34,  0 users,  load average: 0.37, 0.33, 0.36
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5933.9 avail Mem 
+%Cpu(s):  5.0 us,  4.5 sy,  0.0 ni, 90.1 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:29:49 up  1:34,  0 users,  load average: 0.34, 0.32, 0.36
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5930.8 avail Mem 
+top - 08:29:52 up  1:34,  0 users,  load average: 0.34, 0.32, 0.36
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  3.7 sy,  0.0 ni, 91.8 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
+top - 08:29:55 up  1:34,  0 users,  load average: 0.31, 0.32, 0.36
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  2.2 sy,  0.0 ni, 93.1 id,  0.8 wa,  0.0 hi,  0.2 si,  0.0 st
+top - 08:29:58 up  1:34,  0 users,  load average: 0.29, 0.31, 0.35
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5958.6 avail Mem 
+%Cpu(s):  4.7 us,  4.7 sy,  0.0 ni, 90.4 id,  0.0 wa,  0.0 hi,  0.2 si,  0.0 st
+top - 08:30:01 up  1:34,  0 users,  load average: 0.29, 0.31, 0.35
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5927.3 avail Mem 
+%Cpu(s):  2.5 us,  3.0 sy,  0.0 ni, 94.2 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:30:04 up  1:34,  0 users,  load average: 0.27, 0.31, 0.35
+  30798 codespa+  20   0   21.6g 404088  55296 S   1.3   5.0   0:49.12 node              
+%Cpu(s):  3.8 us,  3.3 sy,  0.0 ni, 92.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:30:07 up  1:34,  0 users,  load average: 0.27, 0.31, 0.35
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.7 us,  4.7 sy,  0.0 ni, 89.3 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:30:10 up  1:34,  0 users,  load average: 0.24, 0.30, 0.35
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.7 us,  2.7 sy,  0.0 ni, 92.3 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:30:13 up  1:34,  0 users,  load average: 0.30, 0.31, 0.35
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5943.8 avail Mem 
+%Cpu(s):  4.0 us,  3.7 sy,  0.0 ni, 92.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:30:16 up  1:34,  0 users,  load average: 0.30, 0.31, 0.35
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5937.6 avail Mem 
+%Cpu(s):  2.7 us,  3.0 sy,  0.0 ni, 94.0 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:30:19 up  1:34,  0 users,  load average: 0.28, 0.31, 0.35
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5929.2 avail Mem 
+%Cpu(s):  3.4 us,  4.0 sy,  0.0 ni, 92.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:30:22 up  1:34,  0 users,  load average: 0.28, 0.31, 0.35
+Tasks:  25 total,   1 running,  24 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.0 us,  2.5 sy,  0.0 ni, 95.3 id,  0.2 wa,  0.0 hi,  0.0 si,  0.0 st
+top - 08:30:25 up  1:35,  0 users,  load average: 0.26, 0.30, 0.35
+Tasks:  22 total,   1 running,  21 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.7 us,  3.8 sy,  0.0 ni, 93.2 id,  0.3 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7929.6 total,   2544.6 free,   1646.9 used,   3738.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5966.6 avail Mem 
+
+      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.13 docker-init       
+  30798 codespa+  20   0   21.6g 397284  55296 S   1.3   4.9   0:49.68 node
 ```
 10. Run the command **uname -a**. ***(1 mark)*** 
 ```
-
+Linux codespaces-771f99 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 11. What is the available free memory in the system. ***(1 mark)*** 
 ```
