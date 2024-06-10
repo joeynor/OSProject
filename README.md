@@ -6,7 +6,7 @@ Section: 3
 
 Team Mates:
 1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
+2. Nur Adlina Najwa binti Rosli 2213362
 3. __Fill name__ and __matric no__
 
 ## Rules
