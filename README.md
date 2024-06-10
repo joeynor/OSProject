@@ -28,9 +28,9 @@ Team Mates:
 ```
 https://github.com/sayataktahu/OSProject
 ```
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+2. How many files and folders are in this repository. ***(1 mark)*** 
 ```
-2
+1 file and 1 folder
 ```
 
 ## Exploring github codespaces
