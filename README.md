@@ -335,7 +335,8 @@ shm                65536        8     65528   1% /dev/shm
 README.md  images
 ```
 6. Run the command **ls -asl** . ***(1 mark)***
-```total 44
+```
+total 44
  4 drwxrwxrwx+ 4 codespace root  4096 Jun 10 06:59 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jun 10 06:59 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jun 10 08:01 .git
