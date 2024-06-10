@@ -1,13 +1,13 @@
 # OSProject Running Containers for Application Development
 
-Group Name: Sushi
+Group Name: __Sushi__
 
-Section: 3 
+Section: __3__
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. Nur Adlina Najwa binti Rosli 2213362
-3. Nur Amira Bt Azhari 2217176
+1. __Nadhirah binti Muhammed Najmuddin 2212502__
+2. __Nur Adlina Najwa binti Rosli 2213362__
+3. __Nur Amira Bt Azhari 2217176__
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
