@@ -68,12 +68,11 @@ Ubuntu Linux
 ```
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 ```
-
+Answer
 ```
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ```
-@joeynor ➜ /workspaces/OSProject (main) $ whoami 
-codespace
+Answer
 ```
 
 ## Exploring the Terminal
