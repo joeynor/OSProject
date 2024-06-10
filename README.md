@@ -72,7 +72,7 @@ You can choose from a selection of virtual machine types, from 2 cores, 8 GB RAM
 ```
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ```
-Answer
+We must do the commit action in order to save our changes to the local repository while sync action is like pulling down any changes from the remote repository that have been made since our last commit. By combines this two actions, it allows us to keep our local repository up to date with the latest changes from other contributors
 ```
 
 ## Exploring the Terminal
