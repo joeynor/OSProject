@@ -26,11 +26,11 @@ Team Mates:
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)***
 ```
-   __https://github.com/peacejez/OSProject__
+   https://github.com/peacejez/OSProject
 ```
 3. How many files and folders are in this repository. ***(1 mark)***
 ```
-   __7 folders and 1 file__
+   7 folders and 1 file
 ```
 
 ## Exploring github codespaces
