@@ -82,12 +82,12 @@ codespace
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command *pwd* . **(1 mark)** 
-bash
+```bash
 @Masazlan115 ➜ /workspace/OSProject (main) $ pwd
 /workspaces/OSProject
-
+```
 2. Run the command *cat /etc/passwd* . **(1 mark)** 
-bash
+```bash
 @Masazlan115 ➜ /workspaces/OSProject (main) $ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -114,9 +114,9 @@ systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
-
+```
 3. Run the command *df* . **(1 mark)** 
-bash
+```bash
 @Masazlan115 ➜ /workspaces/OSProject (main) $ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10380596  20772984  34% /
@@ -125,9 +125,9 @@ shm                65536        8     65528   1% /dev/shm
 /dev/root       30298176 24442012   5839780  81% /vscode
 /dev/loop3      32847680 10380596  20772984  34% /workspaces
 /dev/sda1       46127956      112  43752268   1% /tmp
-
+```
 4. Run the command *du* . **(1 mark)** 
-bash
+```bash
 @Masazlan115 ➜ /workspaces/OSProject (main) $ du
 4       ./.git/branches
 8       ./.git/objects/f3
@@ -152,14 +152,14 @@ bash
 2084    ./.git
 1972    ./images
 4080    .
-
+```
 5. Run the command *ls* . **(1 mark)** 
-bash
+```bash
 @Masazlan115 ➜ /workspaces/OSProject (main) $ ls
 README.md  images
-
+```
 6. Run the command *ls -asl* . **(1 mark)** 
-bash
+```bash
 @Masazlan115 ➜ /workspaces/OSProject (main) $ ls -asl
 total 36
  4 drwxrwxrwx+ 4 codespace root  4096 Jun 18 04:08 .
@@ -167,16 +167,16 @@ total 36
  4 drwxrwxrwx+ 9 codespace root  4096 Jun 18 04:24 .git
 20 -rw-rw-rw-  1 codespace root 20325 Jun 18 04:56 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 Jun 18 04:08 images
-
+```
 7. Run the command *free -h* . **(1 mark)** 
-bash
+```bash
 @Masazlan115 ➜ /workspaces/OSProject (main) $ free -h
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.4Gi       166Mi        68Mi       6.2Gi       5.9Gi
 Swap:            0B          0B          0B
-
+```
 8. Run the command *cat /proc/cpuinfo* . **(1 mark)** 
-bash
+```bash
 @Masazlan115 ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
 processor       : 0
 vendor_id       : AuthenticAMD
@@ -233,9 +233,9 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
-
+```
 9. Run the command *top* and type *q* to quit. **(1 mark)** 
-bash
+```bash
 processor       : 1
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -269,40 +269,40 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6099.6 avail Mem
     905 root      20   0 1983176  88228  53120 S   0.0   1.1   0:00.73 dockerd                                                                                                                                            
     912 root      20   0 1798832  46972  30336 S   0.0   0.6   0:01.33 containerd                                                                                                                                         
    1648 codespa+  20   0    2616   1408   1408 S   0.0   0.0   0:00.01 sh 
-
+```
 10. Run the command *uname -a. ***(1 mark)**
-bash
+```bash
 @Masazlan115 ➜ /workspaces/OSProject (main) $ uname -a
 Linux codespaces-f114f3 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
-
+```
 11. What is the available free memory in the system. **(1 mark)** 
-bash
+```bash
 ANSWER: 166Mi
-
+```
 12. What is the available disk space mounted on /workspace. **(1 mark)** 
-bash
+```bash
 ANSWER: 20,772,984 KB (approximately 20.8GB).
-
+```
 13. Name the version and hardware architecture of the linux Virtual environment. **(1 mark)** 
-bash
+```bash
 ANSWER: Linux version 6.5.0-1021-azure, x86_64 architecture.
-
+```
 14. What is the difference between *ls* vs *ls -asl. ***(1 mark)** 
-bash
+```bash
 ANSWER: "ls" lists the files and directories in the current directory, while "ls -asl" provides a more detailed list including file sizes, permissions, and hidden files (starting with a dot), along with total block size.
-
+```
 15. What is the TLB size of the Virtual CPU. **(1 mark)** 
-bash
+```bash
 ANSWER: 2560 4K pages.
-
+```
 16. What is the CPU speed of the Virtual CPU. **(1 mark)** 
-bash
+```bash
 ANSWER: The CPU speed of the Virtual CPU is approximately 2614.871MHz and 2659.272MHz.
-
+```
 17. What is the top running process that consumes the most CPU cycles. **(1 mark)**
-bash
+```bash
 ANSWER: The top running process consuming the most CPU cycles is "node" with PID 2846, using 1.3% CPU.
-
+```
 
 ## Running your own container instance.
 
