@@ -29,8 +29,9 @@ Team Mates:
    __https://github.com/peacejez/OSProject__
 ```
 3. How many files and folders are in this repository. ***(1 mark)***
-   __Fill answer here__.
-
+```
+   __7 folders and 1 file__
+```
 
 ## Exploring github codespaces
 
