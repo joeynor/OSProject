@@ -362,8 +362,14 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***
+```
+   Files in the container are not persistent because they are following their container
+```
+3. Can we run two, or three instances of debian linux? . ***(1 mark)***
+```
+    Yes, we can. Each instance would be a separate container running from the same Debian image
+```
 
 ## Running your own container with persistent storage
 
@@ -382,14 +388,24 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
-2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***
+   ```
+   @peacejez ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+   total 0
+   -rw-r--r-- 1 root root 0 Jun 18 12:34 helloworld.txt
+   ```
+3. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+Yes I can change the permission of the files to user codespace
+```
+@peacejez ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+total 0
+-rw-r--r-- 1 codespace codespace 0 Jun 18 12:34 helloworld.txt
+```
 
 ## You are on your own, create your own static webpage
 
@@ -415,10 +431,18 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
-
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+```
+   user is workspace and group is myroot
+```
+3. What port is the apache web server running. ***(1 mark)***
+  ```
+    80
+```
+6. What port is open for http protocol on the host machine? ***(1 mark)***
+```
+   8080
+```
 ## Create SUB Networks
 
 1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
