@@ -29,7 +29,7 @@ Team Mates:
    https://github.com/sayataktahu/OSProject
 
 2. How many files and folders are in this repository. ***(1 mark)*** 
-<span style="“color: white; opacity: 0.80;">
+<span style="“color: grey; opacity: 0.80;">
     1 file and 1 folder
 </span>
 
