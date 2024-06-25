@@ -651,7 +651,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
 ```bash
-Answer : 
+Answer : drwxr-xr-x 1 root root 4096 Jun 20 09:27 /
 ```
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
@@ -661,7 +661,7 @@ sudo chown -R codespace:codespace myroot
 ```
 *** __Fill answer here__.***
 ```bash
-Answer : 
+Answer : drwxrwxrwx+ 2 codespace codespace 4096 Jun 25 03:51 .
 ```
 
 ## You are on your own, create your own static webpage
