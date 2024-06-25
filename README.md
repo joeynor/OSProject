@@ -629,7 +629,7 @@ Answer : Files in a container are not permanent since containers were made to be
 ```
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
 ```bash
-Answer : 
+Answer : Yes, 
 ```
 
 ## Running your own container with persistent storage
