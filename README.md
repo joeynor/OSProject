@@ -25,15 +25,14 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
-
-   https://github.com/sayataktahu/OSProject
-
+```
+ https://github.com/sayataktahu/OSProject
+```
 2. How many files and folders are in this repository. ***(1 mark)*** 
-<style>
-ans{color: red; opacity: 1.50; }
-</style>
-  <ans>`1 file and 1 folder`<ans>
-  
+```
+ 1 file and 1 folder
+```
+
 ## Exploring github codespaces
 
 1. The next thing that we will be doing is exploring codespaces. First of all, read about codespaces https://docs.github.com/en/codespaces/overview#what-is-a-codespace
