@@ -92,10 +92,11 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 1. Run the command **pwd** . ***(1 mark)*** 
 ```
-/workspaces/OSProject
+@sayataktahu ➜ /workspaces/OSProject (main) $/workspaces/OSProject
 ```
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
 ```
+@sayataktahu ➜ /workspaces/OSProject (main) $ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -124,6 +125,7 @@ sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 ```
 3. Run the command **df** . ***(1 mark)*** 
 ```
+@sayataktahu ➜ /workspaces/OSProject (main) $ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10411660  20741920  34% /
 tmpfs              65536        0     65536   0% /dev
@@ -134,6 +136,7 @@ shm                65536        8     65528   1% /dev/shm
 ```
 4. Run the command **du** . ***(1 mark)*** 
 ```
+@sayataktahu ➜ /workspaces/OSProject (main) $ du
 1972    ./images
 8       ./.git/info
 4       ./.git/branches
@@ -332,10 +335,12 @@ shm                65536        8     65528   1% /dev/shm
 ```
 5. Run the command **ls** . ***(1 mark)*** 
 ```
+@sayataktahu ➜ /workspaces/OSProject (main) $ ls
 README.md  images
 ```
 6. Run the command **ls -asl** . ***(1 mark)***
 ```
+@sayataktahu ➜ /workspaces/OSProject (main) $ ls -asl
 total 44
  4 drwxrwxrwx+ 4 codespace root  4096 Jun 10 06:59 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jun 10 06:59 ..
@@ -345,12 +350,14 @@ total 44
 ```
 7. Run the command **free -h** . ***(1 mark)*** 
 ```
+@sayataktahu ➜ /workspaces/OSProject (main) $ free -h
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.6Gi       2.5Gi       1.0Mi       3.6Gi       5.8Gi
 Swap:            0B          0B          0B
 ```
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
 ```
+@sayataktahu ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
 processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -532,6 +539,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5966.6 avail Mem
 ```
 10. Run the command **uname -a**. ***(1 mark)*** 
 ```
+@sayataktahu ➜ /workspaces/OSProject (main) $ uname -a
 Linux codespaces-771f99 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 11. What is the available free memory in the system. ***(1 mark)*** 
@@ -651,7 +659,8 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
 ```bash
-Answer : drwxr-xr-x 1 root root 4096 Jun 20 09:27 /
+@sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld /
+drwxr-xr-x 1 root root 4096 Jun 20 09:27 /
 ```
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
@@ -661,7 +670,8 @@ sudo chown -R codespace:codespace myroot
 ```
 *** __Fill answer here__.***
 ```bash
-Answer : drwxrwxrwx+ 2 codespace codespace 4096 Jun 25 03:51 .
+@sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld
+drwxrwxrwx+ 2 codespace codespace 4096 Jun 25 03:51 .
 ```
 
 ## You are on your own, create your own static webpage
