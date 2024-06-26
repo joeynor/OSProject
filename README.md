@@ -92,7 +92,8 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 1. Run the command **pwd** . ***(1 mark)*** 
 ```
-@sayataktahu ➜ /workspaces/OSProject (main) $/workspaces/OSProject
+@sayataktahu ➜ /workspaces/OSProject (main) $ pwd
+/workspaces/OSProject
 ```
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
 ```
@@ -633,11 +634,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 1. Are files in the container persistent. Why not?. ***(1 mark)*** 
 ```bash
-Answer : Files in a container are not permanent since containers were made to be temporary and easily disposable. When a container is removed, its filesystem and all files contained within it are also deleted.
+ Files in a container are not permanent since containers were made to be temporary and easily disposable. When a container is removed, its filesystem and all files contained within it are also deleted.
 ```
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
 ```bash
-Answer : Yes, 
+Yes, it is possible to run two or three instances of debian linux.
 ```
 
 ## Running your own container with persistent storage
