@@ -83,11 +83,11 @@ codespace
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command *pwd* . **(1 mark)**
-bash
+```bash
 /workspaces/OSProject
-
+```
 2. Run the command *cat /etc/passwd* . **(1 mark)**
-bash
+```bash
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -113,9 +113,9 @@ systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
-
+```
 3. Run the command *df* . **(1 mark)**
-bash
+```bash
 Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10380372  20773208  34% /
 tmpfs              65536        0     65536   0% /dev
@@ -151,28 +151,28 @@ shm                65536        0     65536   0% /dev/shm
 2044    ./.git
 1972    ./images
 4040    .
-
+```
 5. Run the command *ls* . **(1 mark)**
-bash
+```bash
 README.md  images
-
+```
 6. Run the command *ls -asl* . **(1 mark)**
-bash
+```bash
 total 36
  4 drwxrwxrwx+ 4 codespace root  4096 Jun 26 16:03 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jun 26 16:04 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jun 26 16:04 .git
 20 -rw-rw-rw-  1 codespace root 19859 Jun 26 17:49 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 Jun 26 16:03 images
- 
+ ```
 7. Run the command *free -h* . **(1 mark)** 
-bash
+```bash
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.3Gi       280Mi        63Mi       6.2Gi       6.1Gi
 Swap:            0B          0B          0B
-
+```
 8. Run the command *cat /proc/cpuinfo* . **(1 mark)**
-bash
+```bash
 processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -228,10 +228,10 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
-
+```
 
 9. Run the command *top* and type *q* to quit. **(1 mark)** 
-bash
+```bash
 processor       : 1
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -262,11 +262,11 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6212.2 avail Mem
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                             
     581 codespa+  20   0   21.5g 330256  49920 S   1.3   4.1   0:19.98 node                                                
     560 codespa+  20   0 1332444 106588  45184 S   0.3   1.3   0:04.14 node       
-                                 
+```                                
 10. Run the command *uname -a. ***(1 mark)** 
-bash
+```bash
 Linux codespaces-3221e8 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
-
+```
 11. What is the available free memory in the system. **(1 mark)** 
 - 262.3 MB
 12. What is the available disk space mounted on /workspace. **(1 mark)**
