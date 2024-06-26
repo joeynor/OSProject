@@ -1,13 +1,14 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: Group 8. 
 
-Section: __Fill your class section__. 
+Section: 01. 
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
+1. Ahmed Ashraf Bin Anuar and 2210177
+2. Nurul Adlina Binti Roslan and 2219814
+3. Nurain Awatif Binti Ismail and 2214552
+4. Nuralya Medina Binti Mohammad Nizam and 2211788
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
@@ -57,9 +58,11 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** Glorious Zebra.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***
+i.2-core with 8GB RAM, and 32GB storage.
+ii.4-core with 16GB RAM, and 32GB storage..
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** Committing our work is to publish our work to the team while syncing is to ensure we get the latest commit by the team..
 
 ## Exploring the Terminal
 
