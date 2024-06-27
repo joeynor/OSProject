@@ -658,7 +658,7 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 
 
-3. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
 
 
