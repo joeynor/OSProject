@@ -25,13 +25,9 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
-```
- https://github.com/sayataktahu/OSProject
-```
+_`https://github.com/sayataktahu/OSProject`_
 2. How many files and folders are in this repository. ***(1 mark)*** 
-```
- 1 file and 1 folder
-```
+_`1 file and 1 folder`_
 
 ## Exploring github codespaces
 
@@ -63,17 +59,11 @@ Team Mates:
 ***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)***
-```
-Ubuntu Linux
-```
+_`Ubuntu Linux`_
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
-```
-You can choose either 2 cores, 8 GB RAM, and 32 GB storage, or 4 cores, 16 GB RAM, and 32 GB storage
-```
+_`You can choose either 2 cores, 8 GB RAM, and 32 GB storage, or 4 cores, 16 GB RAM, and 32 GB storage`_
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
-```
-We must do the commit action in order to save our changes to the local repository while sync action is like pulling down any changes from the remote repository that have been made since our last commit. By combines this two actions, it allows us to keep our local repository up to date with the latest changes from other contributors
-```
+_`We must do the commit action in order to save our changes to the local repository while sync action is like pulling down any changes from the remote repository that have been made since our last commit. By combines this two actions, it allows us to keep our local repository up to date with the latest changes from other contributors`_
 
 ## Exploring the Terminal
 
@@ -83,8 +73,6 @@ We must do the commit action in order to save our changes to the local repositor
 @joeynor ➜ /workspaces/OSProject (main) $ whoami 
 codespace
 ```
-
-
 
 ***Questions:***
 
@@ -544,35 +532,20 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5966.6 avail Mem
 Linux codespaces-771f99 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 11. What is the available free memory in the system. ***(1 mark)*** 
-```
- 2.5Gi  
-```
+_`2.5Gi  `_
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
-```
-20741920 KB or about 21 GB
-
-```
+_`20741920 KB or about 21 GB`_
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
-```
-version - 6.5.0-1021-azure 
-hardware architecture - x86_64
-```
+_`version - 6.5.0-1021-azure`_
+_`hardware architecture - x86_64`_
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
-```
-The ls command lists directory contents, while ls -asl provides a more detailed listing including hidden files and detailed file information (permissions, number of links, owner, group, size, and timestamp)
-```
+_`The ls command lists directory contents, while ls -asl provides a more detailed listing including hidden files and detailed file information (permissions, number of links, owner, group, size, and timestamp)`_
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
-```
- 2560 4K pages 
-```
+_`2560 4K pages `_
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)***
-```
-3243.044
-```
+_`3243.044`_
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
-```
-  3.8 
-```
+_`3.8 `_
 
 ## Running your own container instance.
 
@@ -633,13 +606,9 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)*** 
-```bash
- Files in a container are not permanent since containers were made to be temporary and easily disposable. When a container is removed, its filesystem and all files contained within it are also deleted.
-```
+_`Files in a container are not permanent since containers were made to be temporary and easily disposable. When a container is removed, its filesystem and all files contained within it are also deleted.`_
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
-```bash
-Yes, it is possible to run two or three instances of debian linux.
-```
+_`Yes, it is possible to run two or three instances of debian linux.`_
 
 ## Running your own container with persistent storage
 
@@ -658,23 +627,24 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
 ```bash
 @sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld /
 drwxr-xr-x 1 root root 4096 Jun 20 09:27 /
 ```
+<img src="./images/ownContainer_Q1.jpg" width="70%">
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
-
 ```
-*** __Fill answer here__.***
+
 ```bash
 @sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld
 drwxrwxrwx+ 2 codespace codespace 4096 Jun 25 03:51 .
 ```
-
+ <img src="./images/" width="70%">
 ## You are on your own, create your own static webpage
 
 1. Create a directory called webpage in your host machine
@@ -699,9 +669,14 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
+_`user : 1000`_
+_`group : 1000`_
+
+2. What port is the apache web server running. ***(1 mark)*** 
+_`8080`_
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+_`8080`_
 
 ## Create SUB Networks
 
