@@ -654,8 +654,15 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
+-Cannot GET/
+-This error occurs because the Node.js application cannot connect to the MySQL database container, as they are on separate Docker networks (mysqlnet and nodejsnet) and have not been bridged.
+2. Show the instruction needed to make this work. ***(1 mark)***
+ ```bash
+docker network create bridgenet
+docker network connect bridgenet mysql-container
+docker network connect bridgenet nodejs-container
+ ```
 
 
 
