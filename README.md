@@ -409,10 +409,10 @@ Owner: 1000
 
 Group: 1000
 ```
-2. What port is the apache web server running. ***(1 mark)
-*** Port '80'.
+2. What port is the apache web server running. ***(1 mark)*** 
+- Port '80'.
 3. What port is open for http protocol on the host machine? ***(1 mark)*** 
-Port '8080'.
+- Port '8080'.
 
 
 ## Create SUB Networks
@@ -444,8 +444,8 @@ acd86aee4060   none      null      local
 413579fdbb0f   rednet    bridge    local
 ```
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** 
--bluenet : 172.18.0.1
--rednet : 172.19.0.1
+- bluenet : 172.18.0.1
+- rednet : 172.19.0.1
 4. What is the network address for the running container c1 and c2? ***(1 mark)***
 - IP address c1: 172.18.0.2
 - IP address c2: 172.19.0.2
@@ -509,7 +509,7 @@ PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=38 ttl=64 time=0.073 ms
 ```
 2. What is different from the previous ping in the section above? ***(1 mark)***
-I am able to ping c2 from c1 successfully. Previous Ping: The previous ping attempt failed with the error ping: bad address 'c2' because c1 and c2 were on separate, isolated networks (bluenet and rednet) and couldn't communicate with each other directly.
+- I am able to ping c2 from c1 successfully. Previous Ping: The previous ping attempt failed with the error ping: bad address 'c2' because c1 and c2 were on separate, isolated networks (bluenet and rednet) and couldn't communicate with each other directly.
 
 Current Ping: After connecting both containers to the bridgenet network, they are now part of a common network, allowing them to communicate with each other. As a result, the ping from c1 to c2 is successful.
 
