@@ -632,7 +632,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 @sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld /
 drwxr-xr-x 1 root root 4096 Jun 20 09:27 /
 ```
-<img src="./images/ownContainer_Q1.jpg" width="70%">
+ <img src="./images/" width="70%">
 
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
@@ -644,7 +644,8 @@ sudo chown -R codespace:codespace myroot
 @sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld
 drwxrwxrwx+ 2 codespace codespace 4096 Jun 25 03:51 .
 ```
- <img src="./images/" width="70%">
+<img src="./images/ownContainer_Q1.jpg" width="70%">
+
 ## You are on your own, create your own static webpage
 
 1. Create a directory called webpage in your host machine
@@ -674,8 +675,11 @@ _`user : 1000`_
 _`group : 1000`_
 
 2. What port is the apache web server running. ***(1 mark)*** 
+
 _`8080`_
+
 3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+
 _`8080`_
 
 ## Create SUB Networks
