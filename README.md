@@ -397,9 +397,23 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
+```bash
+Permissions: drwxrwxrwx+
+
+d: This indicates it's a directory.
+rwxrwxrwx: This indicates read, write, and execute permissions for the owner, group, and others.
++: This indicates that there are additional access control list (ACL) entries.
+
+Owner: 1000
+
+Group: 1000
+```
+2. What port is the apache web server running. ***(1 mark)
+*** Port '80'.
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+Port '8080'.
+
 
 ## Create SUB Networks
 
@@ -418,11 +432,28 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
+- BusyBox is a software suite that provides several Unix utilities in a single executable file. It is often used in embedded systems and Docker containers because it offers a lightweight set of tools that are efficient and functional. --name switch: The --name switch in Docker is used to assign a name to a container. This makes it easier to reference the container by name rather than by its container ID, simplifying management and identification of the container
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
+```bash
+NETWORK ID     NAME      DRIVER    SCOPE
+7c9a2668b993   bluenet   bridge    local
+afe6dade3149   bridge    bridge    local
+adaf77f09c85   host      host      local
+acd86aee4060   none      null      local
+413579fdbb0f   rednet    bridge    local
+```
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** 
+-bluenet : 172.18.0.1
+-rednet : 172.19.0.1
+4. What is the network address for the running container c1 and c2? ***(1 mark)***
+- IP address c1: 172.18.0.2
+- IP address c2: 172.19.0.2
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+```bash
+ping: bad address 'c2'
+```
+No , Since c1 and c2 are on different networks (bluenet and rednet respectively), they cannot communicate directly with each other. Therefore, the ping command fails with a "bad address" error.
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -434,8 +465,53 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** 
+```bash
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.130 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.082 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.105 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.096 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.076 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.069 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.064 ms
+64 bytes from 172.20.0.3: seq=11 ttl=64 time=0.073 ms
+64 bytes from 172.20.0.3: seq=12 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=13 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=14 ttl=64 time=0.106 ms
+64 bytes from 172.20.0.3: seq=15 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=16 ttl=64 time=0.103 ms
+64 bytes from 172.20.0.3: seq=17 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=18 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=19 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=20 ttl=64 time=0.077 ms
+64 bytes from 172.20.0.3: seq=21 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=22 ttl=64 time=0.115 ms
+64 bytes from 172.20.0.3: seq=23 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=24 ttl=64 time=0.090 ms
+64 bytes from 172.20.0.3: seq=25 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=26 ttl=64 time=0.074 ms
+64 bytes from 172.20.0.3: seq=27 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=28 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=29 ttl=64 time=0.076 ms
+64 bytes from 172.20.0.3: seq=30 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=31 ttl=64 time=0.069 ms
+64 bytes from 172.20.0.3: seq=32 ttl=64 time=0.113 ms
+64 bytes from 172.20.0.3: seq=33 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=34 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=35 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=36 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=37 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=38 ttl=64 time=0.073 ms
+```
+2. What is different from the previous ping in the section above? ***(1 mark)***
+I am able to ping c2 from c1 successfully. Previous Ping: The previous ping attempt failed with the error ping: bad address 'c2' because c1 and c2 were on separate, isolated networks (bluenet and rednet) and couldn't communicate with each other directly.
+
+Current Ping: After connecting both containers to the bridgenet network, they are now part of a common network, allowing them to communicate with each other. As a result, the ping from c1 to c2 is successful.
 
 ## Intermediate Level (10 marks bonus)
 
