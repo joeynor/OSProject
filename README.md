@@ -878,7 +878,7 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** <br>
    <img src="./images/step5_output.png" width="70%"> <br>
 
-**_`The error above indicates that the server actively refused the connection attempt because the server is not accepting incoming requests. This is possibly because it is not running, it is broken, or a firewall has blocked access to that connection.`_**
+**_`The curl command failed because the connection to your server was refused. Meaning that you weren't able to connect to localhost on port 8080. This is expected because your container is running in isolation which includes networking.`_**
 
 2. Show the instruction needed to make this work. ***(1 mark)*** <br>
 **_`There are multiple ways to fix this error:`_** <br>
