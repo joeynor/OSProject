@@ -694,8 +694,8 @@ docker run -itd --net rednet --name c2 busybox sh
 ***Questions:***
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** <br>
- **_`busybox: Fill answer here `_**<br>
- **_`--name: Fill answer here `_**
+ **_`busybox: BusyBox is an open source project that provides a stripped down implementation of around 400 common UNIX/Linux commands.`_**<br>
+ **_`--name: --name command switch is used to name a container.`_**
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
  <img src="./images/subnetwork_Q2.png" width="70%">
@@ -867,8 +867,7 @@ INSERT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'v
 
 ### Summary
 
-You have now set up a Node.js application in a Docker container on nodejsnet netowrk and a MySQL database in another Docker container on mysqlnet network. Now bridge the two network together.
-
+You have now set up a Node.js application in a Docker container on nodejsnet network and a MySQL database in another Docker container on mysqlnet network. Now bridge the two network together.
 ***Questions:***
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
