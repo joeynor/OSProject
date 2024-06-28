@@ -694,8 +694,8 @@ docker run -itd --net rednet --name c2 busybox sh
 ***Questions:***
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** <br>
- ** _`busybox: Fill answer here `_**<br>
- ** _`--name: Fill answer here `_**
+ **_`busybox: Fill answer here `_**<br>
+ **_`--name: Fill answer here `_**
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
  <img src="./images/subnetwork_Q2.png" width="70%">
@@ -726,6 +726,7 @@ docker exec c1 ping c2
  <img src="./images" width="70%">
 
 2. What is different from the previous ping in the section above? ***(1 mark)*** <br>
+**_`The key difference in the successful scenario is that both containers are part of the same user-defined Docker network. This setup allows container c1 to resolve and communicate with container c2 easily. In contrast, the error occurs because container c1 cannot resolve c2, likely due to them being on different networks or an incorrect network configuration.`_**
 
 ## Intermediate Level (10 marks bonus)
 
