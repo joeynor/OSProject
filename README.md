@@ -724,7 +724,7 @@ docker exec c1 ping c2
 1. Are you able to ping? Show your output . ***(1 mark)*** <br>
 **_`Yes, we are able to ping the network`_**
  <img src="./images/ping1.png" width="70%"> <br>
- ...
+ ...<br>
  <img src="./images/ping2.png" width="70%"> <br>
 
 2. What is different from the previous ping in the section above? ***(1 mark)*** <br>
