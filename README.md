@@ -725,7 +725,7 @@ docker exec c1 ping c2
 **_`Yes, we are able to ping the network`_**
  <img src="./images/ping1.png" width="70%"> <br>
  ... <br>
- <img src="./images/ping2.png" width="60%">
+ <img src="./images/ping2.png" width="70%">
 
 2. What is different from the previous ping in the section above? ***(1 mark)*** <br>
 **_`The key difference in the successful scenario is that both containers are part of the same user-defined Docker network. This setup allows container c1 to resolve and communicate with container c2 easily. In contrast, the error occurs because container c1 cannot resolve c2, likely due to them being on different networks or an incorrect network configuration.`_**
