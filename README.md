@@ -25,9 +25,9 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** <br>
-_`https://github.com/sayataktahu/OSProject`_
+**_`https://github.com/sayataktahu/OSProject`_**
 2. How many files and folders are in this repository. ***(1 mark)*** <br>
-_`1 file and 1 folder`_
+**_`1 file and 1 folder`_**
 
 ## Exploring github codespaces
 
@@ -59,11 +59,11 @@ _`1 file and 1 folder`_
 ***Questions:***
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** <br>
-_`Ubuntu Linux`_
+**_`Ubuntu Linux`_**
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** <br>
-_`You can choose either 2 cores, 8 GB RAM, and 32 GB storage, or 4 cores, 16 GB RAM, and 32 GB storage`_
+**_`You can choose either 2 cores, 8 GB RAM, and 32 GB storage, or 4 cores, 16 GB RAM, and 32 GB storage`_**
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** <br>
-_`We must do the commit action in order to save our changes to the local repository while sync action is like pulling down any changes from the remote repository that have been made since our last commit. By combines this two actions, it allows us to keep our local repository up to date with the latest changes from other contributors`_
+**_`We must do the commit action in order to save our changes to the local repository while sync action is like pulling down any changes from the remote repository that have been made since our last commit. By combines this two actions, it allows us to keep our local repository up to date with the latest changes from other contributors`_**
 
 ## Exploring the Terminal
 
@@ -532,20 +532,20 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5966.6 avail Mem
 Linux codespaces-771f99 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
 11. What is the available free memory in the system. ***(1 mark)*** <br>
-_`2.5Gi  `_
+**_`2.5Gi  `_**
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** <br>
-_`20741920 KB or about 21 GB`_
+**_`20741920 KB or about 21 GB`_**
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** <br>
-_`version - 6.5.0-1021-azure`_ <br>
-_`hardware architecture - x86_64`_
+**_`version - 6.5.0-1021-azure`_** <br>
+**_`hardware architecture - x86_64`_**
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** <br>
-_`The ls command lists directory contents, while ls -asl provides a more detailed listing including hidden files and detailed file information (permissions, number of links, owner, group, size, and timestamp)`_
+**_`The ls command lists directory contents, while ls -asl provides a more detailed listing including hidden files and detailed file information (permissions, number of links, owner, group, size, and timestamp)`_**
 15. What is the TLB size of the Virtual CPU. ***(1 mark)*** <br>
-_`2560 4K pages `_
+**_`2560 4K pages `_**
 16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** <br>
-_`3243.044`_
+**_`3243.044`_**
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** <br>
-_`3.8 `_
+**_`3.8 `_**
 
 ## Running your own container instance.
 
@@ -606,9 +606,9 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)*** <br>
-_`Files in a container are not permanent since containers were made to be temporary and easily disposable. When a container is removed, its filesystem and all files contained within it are also deleted.`_
+**_`Files in a container are not permanent since containers were made to be temporary and easily disposable. When a container is removed, its filesystem and all files contained within it are also deleted.`_**
 2. Can we run two, or three instances of debian linux? . ***(1 mark)*** <br>
-_`Yes, it is possible to run two or three instances of debian linux.`_
+**_`Yes, it is possible to run two or three instances of debian linux.`_**
 
 ## Running your own container with persistent storage
 
@@ -637,7 +637,7 @@ drwxr-xr-x 1 root root 4096 Jun 20 09:27 /
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 ```
-
+**_`Yes`_**
 ```bash
 @sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld
 drwxrwxrwx+ 2 codespace codespace 4096 Jun 25 03:51 .
@@ -667,14 +667,14 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 ***Questions:***
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** <br>
-  _`user : 1000`_ <br>
-  _`group : 1000`_
+  **_`user : 1000`_** <br>
+  **_`group : 1000`_**
 
 2. What port is the apache web server running. ***(1 mark)*** <br>
-_`8080`_
+**_`8080`_**
 
 3. What port is open for http protocol on the host machine? ***(1 mark)*** <br>
-_`8080`_
+**_`8080`_**
 
 ## Create SUB Networks
 
@@ -694,19 +694,19 @@ docker run -itd --net rednet --name c2 busybox sh
 ***Questions:***
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** <br>
-  _`busybox: Fill answer here `_<br>
-  _`--name: Fill answer here `_
+ ** _`busybox: Fill answer here `_**<br>
+ ** _`--name: Fill answer here `_**
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
  <img src="./images/subnetwork_Q2.png" width="70%">
 
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***<br>.
-  _`Gateway of bluenet: 172.18.0.1`_ <br>
-  _`Gateway of rednet: 172.19.0.1`_
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***<br>
+  **_`Gateway of bluenet: 172.18.0.1`_** <br>
+  **_`Gateway of rednet: 172.19.0.1`_**
 
 4. What is the network address for the running container c1 and c2? ***(1 mark)*** <br>
-  _`Network address for c1: 172.18.0.2`_ <br>
-  _`Network address for c2: 172.19.0.2`_
+  **_`Network address for c1: 172.18.0.2`_** <br>
+  **_`Network address for c2: 172.19.0.2`_**
 
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** 
  <img src="./images/subnetwork_Q5.png" width="70%">
@@ -722,7 +722,7 @@ docker exec c1 ping c2
 ***Questions:***
 
 1. Are you able to ping? Show your output . ***(1 mark)*** <br>
-`Yes, we are able to ping the network`
+**_`Yes, we are able to ping the network`_**
  <img src="./images" width="70%">
 
 2. What is different from the previous ping in the section above? ***(1 mark)*** <br>
