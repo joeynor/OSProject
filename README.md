@@ -25,7 +25,7 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** <br>
-**_`https://github.com/sayataktahu/OSProject`_**
+   https://github.com/sayataktahu/OSProject
 2. How many files and folders are in this repository. ***(1 mark)*** <br>
 **_`1 file and 1 folder`_**
 
@@ -61,7 +61,7 @@ Team Mates:
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** <br>
 **_`Ubuntu Linux`_**
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** <br>
-**_`You can choose either 2 cores, 8 GB RAM, and 32 GB storage, or 4 cores, 16 GB RAM, and 32 GB storage`_**
+**_`We can choose either 2 cores, 8 GB RAM, and 32 GB storage, or 4 cores, 16 GB RAM, and 32 GB storage`_**
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** <br>
 **_`We must do the commit action in order to save our changes to the local repository while sync action is like pulling down any changes from the remote repository that have been made since our last commit. By combines this two actions, it allows us to keep our local repository up to date with the latest changes from other contributors`_**
 
@@ -627,7 +627,10 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** <br>
+**_`User: root`_** <br>
+**_`Group: root`_**
+
 ```bash
 @sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld /
 drwxr-xr-x 1 root root 4096 Jun 20 09:27 /
@@ -638,6 +641,7 @@ drwxr-xr-x 1 root root 4096 Jun 20 09:27 /
 sudo chown -R codespace:codespace myroot
 ```
 **_`Yes`_**
+
 ```bash
 @sayataktahu ➜ /workspaces/OSProject (main) $ ls -ld
 drwxrwxrwx+ 2 codespace codespace 4096 Jun 25 03:51 .
@@ -709,6 +713,7 @@ docker run -itd --net rednet --name c2 busybox sh
   **_`Network address for c2: 172.19.0.2`_**
 
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** 
+  **_`No`_** <br>
  <img src="./images/subnetwork_Q5.png" width="70%">
 
 ## Bridging two SUB Networks
@@ -722,13 +727,13 @@ docker exec c1 ping c2
 ***Questions:***
 
 1. Are you able to ping? Show your output . ***(1 mark)*** <br>
-**_`Yes, we are able to ping the network`_**
+**_`Yes, we are able to ping the networks`_**
  <img src="./images/ping1.png" width="70%"> <br>
  ... <br>
     <img src="./images/ping2.png" width="70%">
 
 2. What is different from the previous ping in the section above? ***(1 mark)*** <br>
-**_`The key difference in the successful scenario is that both containers are part of the same user-defined Docker network. This setup allows container c1 to resolve and communicate with container c2 easily. In contrast, the error occurs because container c1 cannot resolve c2, likely due to them being on different networks or an incorrect network configuration.`_**
+**_`The key difference in the successful situation is that both containers are part of the same user-defined Docker network. This setup allows container c1 to resolve and communicate with container c2 easily. In contrast, the error occurs because container c1 cannot resolve c2, likely due to them being on different networks or an incorrect network configuration.`_**
 
 ## Intermediate Level (10 marks bonus)
 
@@ -862,7 +867,7 @@ CREATE TABLE mytable (
   value VARCHAR(255) NOT NULL
 );
 
-INSERT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'value2'), ('example3', 'value3');
+
 ```
 
 ### Summary
@@ -870,9 +875,17 @@ INSERT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'v
 You have now set up a Node.js application in a Docker container on nodejsnet network and a MySQL database in another Docker container on mysqlnet network. Now bridge the two network together.
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** <br>
+   <img src="./images/step5_output.png" width="70%"> <br>
 
+**_`The error above indicates that the server actively refused the connection attempt because the server is not accepting incoming requests. This is possibly because it is not running, it is broken, or a firewall has blocked access to that connection.`_**
+
+2. Show the instruction needed to make this work. ***(1 mark)*** <br>
+**_`There are multiple ways to fix this error:`_** <br>
+**_`1. Disable Active Plugins: An incompatible or buggy plugin could be the culprit for server-side issues. If you have any plugins or extensions installed within your CMS, try disabling them and see if that resolves the issue.`_** <br> 
+**_`2. Change Your Theme: Like plugins and extensions, themes can be the cause of the error. This is most likely to happen if you are using an outdated third-party theme. To test whether a theme is causing the error, switch to an official theme made by the developer of your chosen CMS.`_** <br>
+**_`3. Increase Your PHP max_execution_time: Some connection errors happen because a script on your website is taking too long to execute. One way to address this is by increasing the max_execution_time in your PHP settings.`_** <br>
+**_`4. Get In Touch With Your Host: If all the troubleshooting tips mentioned above did not fix the error, get in touch with the web host’s support team.`_**
 
 
 ## What to submit
