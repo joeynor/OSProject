@@ -674,6 +674,7 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
   **_`user : 1000`_** <br>
   **_`group : 1000`_**
 
+  <img src="./images/website_Q1.png" width="70%">
 2. What port is the apache web server running. ***(1 mark)*** <br>
 **_`8080`_**
 
@@ -881,7 +882,7 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 **_`The error occured because the connection to the server was refused which means that we were not able to connect to localhost on port 3000. This is expected because the container is running in isolation which includes networking.`_**
 
 2. Show the instruction needed to make this work. ***(1 mark)*** <br>
-**_`To make this work, we need to first stop the container using ctrl-c. Then, restart the container and expose port 3000 to port 3000 on the host using docker run --publish 8080:8080 docker-gs-ping. After that, rerun the curl command`_** <br>
+**_`To make this work, we need to first stop the container using ctrl-c. Then, restart the container and expose port 3000 to port 3000 on the host using docker run --publish 8080:8080 docker-gs-ping. After that, we run the curl command`_** <br>
 
 
 ## What to submit
