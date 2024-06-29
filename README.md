@@ -883,7 +883,7 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 **_`The error occured because the connection to the server was refused which means that we were not able to connect to localhost on port 3000. This is expected because the container is running in isolation which includes networking.`_**
 
 2. Show the instruction needed to make this work. ***(1 mark)*** <br>
-**_`To make this work, we need to use this command: docker run -it -p 3000:3000 nodejs-app`_** <br>
+**_`To make this work, we need to use the command: docker run -p 3000:3000 nodejs-app`_** <br>
 
 
 ## What to submit
