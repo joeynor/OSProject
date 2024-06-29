@@ -878,14 +878,10 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** <br>
    <img src="./images/step5_output.png" width="70%"> <br>
 
-**_`The error occured because the connection to the server was refused which means that  . This is expected because your container is running in isolation which includes networking.`_**
+**_`The error occured because the connection to the server was refused which means that we were not able to connect to localhost on port 3000. This is expected because the container is running in isolation which includes networking.`_**
 
 2. Show the instruction needed to make this work. ***(1 mark)*** <br>
-**_`There are multiple ways to fix this error:`_** <br>
-**_`1. Disable Active Plugins: An incompatible or buggy plugin could be the culprit for server-side issues. If you have any plugins or extensions installed within your CMS, try disabling them and see if that resolves the issue.`_** <br> 
-**_`2. Change Your Theme: Like plugins and extensions, themes can be the cause of the error. This is most likely to happen if you are using an outdated third-party theme. To test whether a theme is causing the error, switch to an official theme made by the developer of your chosen CMS.`_** <br>
-**_`3. Increase Your PHP max_execution_time: Some connection errors happen because a script on your website is taking too long to execute. One way to address this is by increasing the max_execution_time in your PHP settings.`_** <br>
-**_`4. Get In Touch With Your Host: If all the troubleshooting tips mentioned above did not fix the error, get in touch with the web host’s support team.`_**
+**_`To make this work, we need to first stop the container using ctrl-c. Then, restart the container and expose port 3000 to port 3000 on the host using docker run --publish 8080:8080 docker-gs-ping. After that, rerun the curl command`_** <br>
 
 
 ## What to submit
