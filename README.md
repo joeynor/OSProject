@@ -681,6 +681,8 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 3. What port is open for http protocol on the host machine? ***(1 mark)*** <br>
 **_`8080`_**
 
+<img src="./images/ourWebsite.png" width="70%">
+
 ## Create SUB Networks
 
 1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
