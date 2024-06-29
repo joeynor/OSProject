@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OS Project</title>
+	</head>
+    <style>
+				
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 0.15em;
+            background-image: linear-gradient(rgba(200, 200, 207, 0), rgba(164, 164, 156, 0.148)),url(./ubuntu.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            color: white;}
+
+        nav{
+            background-color: black;
+            display: flex;
+            padding: 40px;
+            justify-content:space-between;}
+
+        ul{
+            width: 570px;
+            margin: 0px auto 0px auto;
+            text-align: center;}
+
+        li{
+            display: inline;
+            margin: auto 6px auto 6px;
+            padding: 5px;}
+    
+        a{
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bolder;}
+        
+        p{
+            font-size: 25px;}
+
+        .one, .two{
+            margin: 100px auto 100px auto;
+            padding-left: 100px;}
+
+        #slogan{
+            font-size: 50px;}
+
+        input[type="button"] {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 80px;
+            box-sizing: border-box;  
+            align-items: center;}
+        
+        input[type="button"] {
+            background-color: #405de6;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            height: 40px;
+            border-radius: 5px;
+            font-family: 'Georgia'; /* Change the font family */
+            font-size: 12px;}
+        
+        input[type="button"]:hover{
+            background-color: #3a5697;}
+
+        a:hover {
+            color: rgba(236, 17, 17, 0.825);}
+    </style>
+    
+	<body>
+        <nav>
+            <div>
+                <a href="#"><img src="./logo.png" alt="U shape" width="80px" height="30px"/></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#" class="on">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+           
+        <section class="one">
+            <div id="slogan">  
+                Like to learn new things?
+            </div>
+            <p>
+                Elevate your education with our interactive and engaging platform.
+                <br><br>
+                One-Stop Online Education for Learning to Run Containers for Application Development.
+            </p>
+        </section>
+        <section class="two">
+            <input type="button" value="Start your journey">
+        </section>
+	</body>
+</html>
