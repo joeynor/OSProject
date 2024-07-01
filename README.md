@@ -27,7 +27,8 @@ Team Mates:
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)***
 - https://github.com/ziy4ch/OSProject.git
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+2. How many files and folders are in this repository. ***(1 mark)***
+- 2 files,images file and README.md
 
 
 ## Exploring github codespaces
